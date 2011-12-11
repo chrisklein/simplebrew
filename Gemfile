@@ -12,7 +12,6 @@ gem "haml"
 gem 'rabl'
 gem 'draper'
 gem 'mustache'
-gem "autotest", "~> 4.4.6"
 
 
 # Gems used only for assets and not required
