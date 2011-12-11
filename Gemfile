@@ -12,6 +12,7 @@ gem "haml"
 gem 'rabl'
 gem 'draper'
 gem 'mustache'
+gem "autotest", "~> 4.4.6"
 
 
 # Gems used only for assets and not required
@@ -23,7 +24,7 @@ group :assets do
 end
 
 group :development do
-  gem 'rspec-rails', '2.6.1'
+  gem 'rspec-rails', '2.7.0'
   gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
   gem 'faker', '0.3.1', :require => false
 end
@@ -31,7 +32,7 @@ end
 group :test do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
-  gem 'rspec-rails', '2.6.1'
+  gem 'rspec-rails', '2.7.0'
   gem 'webrat', '0.7.1'
   gem 'factory_girl_rails', '1.0'
 end
