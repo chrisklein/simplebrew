@@ -10,8 +10,7 @@ describe PagesController do
     
     it "should have the right title" do
        get 'home'
-       response.should have_selector("title",
-                          :content => "Simple Brew | Home")
+       response.should have_selector("title", :content => "Simple Brew | Home")
       end
   end
 
@@ -23,8 +22,7 @@ describe PagesController do
     
     it "should have the right title" do
       get 'contact'
-      response.should have_selector("title",
-                          :content => "Simple Brew | Contact")
+      response.should have_selector("title", :content => "Simple Brew | Contact")
     end
   end
 
