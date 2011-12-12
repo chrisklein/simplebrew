@@ -10,7 +10,7 @@
 #
 
 class User < ActiveRecord::Base
-  attr_accessible :name, :email
+  attr_accessible :name, :email, :password, :password_confirmation
   
   email_regex = /[\w+\-.]+@[a-z\d\-.]+\.[a-z]+/i
   
@@ -19,6 +19,10 @@ class User < ActiveRecord::Base
                        
   validates :email,    :presence     => true,
                        :format       => { :with => email_regex },
-                       :uniqueness   => { :case_sensitive => false }                     
+                       :uniqueness   => { :case_sensitive => false }      
+                       
+  validates :password, :presence     => true,
+                       :confirmation => true,
+                       :length       => { :within => 6..40 }                                    
                        
 end
