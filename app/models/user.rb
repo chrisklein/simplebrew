@@ -10,6 +10,7 @@
 #
 
 class User < ActiveRecord::Base
+  attr_accessor   :password #attr_accessor only applies to models in memory.
   attr_accessible :name, :email, :password, :password_confirmation
   
   email_regex = /[\w+\-.]+@[a-z\d\-.]+\.[a-z]+/i
