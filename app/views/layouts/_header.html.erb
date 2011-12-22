@@ -1,15 +1,32 @@
 <header>
 	<!-- checkout chapter 9.27 for adding logo -->
-  <nav>
-    <ul>
-      <li><%= link_to "Home", root_path %></li>
-      <% if signed_in? %>
-	  	<li><%= link_to "Profile", current_user %></li>
-		<li><%= link_to "Settings", edit_user_path(current_user) %></li>
-      	<li><%= link_to "Sign out", signout_path, :method => :delete %></li>
-      <% else %>
-      	<li><%= link_to "Sign in", signin_path %></li>
-      <% end %>
-    </ul>
-  </nav>
+  <div class="topbar">	
+	<div class="topbar-inner">
+		<div class="container">
+		   <h3>
+			 <%= link_to "Simple Brew", root_path %>
+		   </h3>	
+	       <ul class="nav">
+		      <li class="<%= 'active' if current_page?(root_path) %>">
+				<%= link_to "Home", root_path %>
+			  </li>
+		      <% if signed_in? %>
+			  	<li class="<%= 'active' if current_page?(current_user) %>">
+			      <%= link_to "Profile", current_user %>
+			    </li>
+				<li class="<%= 'active' if current_page?(edit_user_path(current_user)) %>">
+				  <%= link_to "Settings", edit_user_path(current_user) %>
+				</li>
+		      	<li class="<%= 'active' if current_page?(signout_path) %>">
+		          <%= link_to "Sign out", signout_path, :method => :delete %>
+		        </li>
+		      <% else %>
+		      	<li class="<%= 'active' if current_page?(signin_path) %>">
+		          <%= link_to "Sign in", signin_path %>
+		        </li>
+		      <% end %>
+		    </ul>
+		</div>
+	</div>
+  </div>
 </header>
