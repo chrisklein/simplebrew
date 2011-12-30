@@ -52,6 +52,7 @@
 /* #Basic Styles
 ================================================== */
 	body {
+		padding-top: 40px; /*Needed for topbar*/
 		background: #fff;
 		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #444;
