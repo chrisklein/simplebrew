@@ -4,11 +4,15 @@
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // the compiled file.
 //
+//= require modernizr-2.0.6.min
 //= require jquery
 //= require jquery_ujs
-//= require skeleton
 //= require underscore-min
 //= require backbone
 //= require mustache
 //= require json2
+//= responsive-plugin
+//= responsive-script
+//= require imgsizer
+//= require MBPhelper
 //= require_tree .

@@ -6,9 +6,9 @@
 * Tob Bar Styles taken from Twitter Bootstrap
 * They're straight CSS so don't get hung up on 
 * them not being in proper scss nested formatting
-*/
+
 body {
-  padding-top: 40px; /*Needed for topbar*/
+  padding-top: 40px; /*Needed for topbar
 }
 
 .topbar {
@@ -341,6 +341,5 @@ a.menu:after, .dropdown-toggle:after {
 .dropdown.open .dropdown-menu {
   display: block;
 }
-/**
 *  End of Top Bar styles
 */

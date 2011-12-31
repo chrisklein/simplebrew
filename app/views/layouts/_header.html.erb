@@ -1,12 +1,13 @@
-<header>
+<header role="banner">
 	<!-- checkout chapter 9.27 for adding logo -->
-  <div class="topbar">	
+  <!-- <div class="topbar">	
 	<div class="topbar-inner">
-		<div class="container">
-		   <h3>
-			 <%= link_to "Simple Brew", root_path %>
-		   </h3>	
-	       <ul class="nav">
+		<div class="container"> -->
+		  <nav>	
+		    <h3>
+			  <%= link_to "Simple Brew", root_path %>
+		    </h3>	
+	        <ul class="nav">
 		      <li class="<%= 'active' if current_page?(root_path) %>">
 				<%= link_to "Home", root_path %>
 			  </li>
@@ -26,7 +27,8 @@
 		        </li>
 		      <% end %>
 		    </ul>
-		</div>
+		  </nav>
+		<!-- </div>
 	</div>
-  </div>
+  </div> -->
 </header>
