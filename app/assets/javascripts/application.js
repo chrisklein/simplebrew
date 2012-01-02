@@ -14,5 +14,5 @@
 //= responsive-plugin
 //= responsive-script
 //= require imgsizer
-//= require MBPhelper
+//= require mbp-helper
 //= require_tree .
